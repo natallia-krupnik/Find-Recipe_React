@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.recipe{
+	/* background-color:  rgba(255, 255, 255, 0.4); */
+	width: 100vw;
+	min-height: 100vh;
+}
+.recipe__main{
+	padding: 20px;
+	padding-bottom: 30px;
+}
+.main__video{
+	object-fit: cover;
+	position: fixed;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background-color:  rgba(255, 255, 255, 0.4);
+}
+.main__header{
+	text-align: center;
+	font-size: 45px;
+	letter-spacing: 4px;
+	color:  #178890;
+	text-shadow: 4px 2px 2px black;
+	font-weight: 700;
+}
+.recipe__input{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.input__feld{
+	width: 500px;
+}
+.input__feld input{
+	padding: 5px 10px;
+	width: 100%;
+	outline: none;
+	background: rgb(255, 255, 255,0.6);
+	border: transparent;
+	box-shadow: 2px 2px 5px black;
+}
+.input__feld input::placeholder{
+	font-style: italic;
+	font-size: 12px;
+}
+.input__feld input:focus::placeholder{
+	font-size: 0;
+}
+.input__btn{
+	font-size: 12px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	background-color: #178890;
+	border: transparent;
+	box-shadow: 2px 2px 5px black;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.input__btn:active{
+	transform: translate(0px, -2px);
+	box-shadow: 5px 5px 10px black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
