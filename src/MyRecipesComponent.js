@@ -29,13 +29,13 @@ const MyRecipesComponent = ({label, calories, image, ingredients, protein,fat, c
 					<p>CARB</p>
 				</div>
 				<div className='bottom__container four'>
-					<span className='two__quantity'>
+					<span className='four__quantity'>
 						{protein.PROCNT.quantity.toFixed()}
 					</span>
-					<span className='two__quantity'>
+					<span className='four__quantity'>
 						{fat.FAT.quantity.toFixed()}
 					</span>
-					<span className='two__quantity'>
+					<span className='four__quantity'>
 							{carb.CHOCDF.quantity.toFixed(2)}
 					</span>
 				</div>
