@@ -58,14 +58,16 @@ function App() {
 
 				<div className='recipe__component'>
 					{myRecipeArray.map((element,id) =>(
-						<MyRecipesComponent key={id}
-							label={element.recipe.label}
-							calories={element.recipe.calories}
-							image={element.recipe.image} 
-							ingredients={element.recipe.ingredientLines}
-							// protein={element.recipe.totalDaily.PROCHT}
-							url={element.recipe.url}
-							/>
+							<MyRecipesComponent key={id}
+								label={element.recipe.label}
+								calories={element.recipe.calories}
+								image={element.recipe.image} 
+								ingredients={element.recipe.ingredientLines}
+								protein={element.recipe.totalDaily}
+								fat={element.recipe.totalDaily}
+								carb={element.recipe.totalDaily}
+								url={element.recipe.url}
+								/>
 					))}
 				</div>
 			

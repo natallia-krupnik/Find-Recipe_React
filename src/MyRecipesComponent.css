@@ -57,6 +57,11 @@
 	border-radius: 50%;
 	margin: 0px 10px 1px 0px;
 }
+.two__quantity{
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 15px;
+}
 .two :nth-child(2):before{
 	content: "";
 	display: inline-block;
@@ -78,7 +83,11 @@
 .three{
 	display: flex;
 	justify-content: center;
+	flex: 2;
 }
 .three a{
 	font-size: 14px;
+}
+.four{
+	text-align: left;
 }

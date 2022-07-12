@@ -1,7 +1,7 @@
 import React from 'react';
 import "./MyRecipesComponent.css"
 
-const MyRecipesComponent = ({label, calories, image, ingredients, protein, url}) => {
+const MyRecipesComponent = ({label, calories, image, ingredients, protein,fat, carb, url}) => {
 	return (
 		<div className='container'>
 			<div className='top'>
@@ -27,6 +27,17 @@ const MyRecipesComponent = ({label, calories, image, ingredients, protein, url})
 					<p>PROTEIN</p>
 					<p>FAT</p>
 					<p>CARB</p>
+				</div>
+				<div className='bottom__container four'>
+					<span className='two__quantity'>
+						{protein.PROCNT.quantity.toFixed()}
+					</span>
+					<span className='two__quantity'>
+						{fat.FAT.quantity.toFixed()}
+					</span>
+					<span className='two__quantity'>
+							{carb.CHOCDF.quantity.toFixed(2)}
+					</span>
 				</div>
 				<div className='bottom__container three'>
 					<a href={url} target="_blank" rel="noreferrer">Link to Recipe</a>
