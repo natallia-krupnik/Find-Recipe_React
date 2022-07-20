@@ -33,7 +33,8 @@ function App() {
 
 	const onSubmitForm =(e)=>{
 		e.preventDefault()
-		setSubmitButton(inputSearch)
+		setSubmitButton(inputSearch) //тут передала что пишет пользователь
+		setInputSearch("") //тут дала очистила строку ввода 
 	}
 
 	return (
@@ -48,10 +49,11 @@ function App() {
 
 				<form className='recipe__input' onSubmit={onSubmitForm}>
 					<div className='input__feld'>
-						<input value={inputSearch} 
-						onChange={inputRecepi} 
-						type="text" 
-						placeholder="keywords..."></input>
+						<input 
+							value={inputSearch} 
+							onChange={inputRecepi} 
+							type="text" 
+							placeholder="keywords..."></input>
 					</div>
 					<button className='input__btn'>SEARCH</button>
 				</form>
