@@ -34,7 +34,7 @@ function App() {
 	const onSubmitForm =(e)=>{
 		e.preventDefault()
 		setSubmitButton(inputSearch) //тут передала что пишет пользователь
-		setInputSearch("") //тут дала очистила строку ввода 
+		setInputSearch("") //тут дала очистить строку ввода 
 	}
 
 	return (
